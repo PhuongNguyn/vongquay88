@@ -316,15 +316,15 @@ chicken</textarea>
             draw();
             let randomIndex = Math.floor(Math.random() * items.length);
 
-            if (items.length < 61) {
+            if (items.length < (199 - 61)) {
                 randomIndex = items.findIndex(item => item.toLowerCase() == "ODR Foxy".toLowerCase() || item.toLowerCase() == "ODR Raiden".toLowerCase())
             }
 
-            if (items.length < 21) {
+            if (items.length < (199 - 81)) {
                 randomIndex = items.findIndex(item => item.toLowerCase() == "ODR Howll".toLowerCase() || item.toLowerCase() == "OLTI Kelvin".toLowerCase())
             }
 
-            if (items.length < 5) {
+            if (items.length < (199 - 85)) {
                 randomIndex = items.findIndex(item => item.toLowerCase() == "ODR Luffy".toLowerCase() || item.toLowerCase() == "ODR Hoshi".toLowerCase())
             }
 
