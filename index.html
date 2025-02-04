@@ -138,12 +138,14 @@
             </div>
         </div>
     </div>
-    <div class="inputArea" onchange="createWheel()">
+    <div class="inputArea" onchange="initWheel()">
         <textarea rows="20" cols="30">cat
-dog
-cow
-duck
-sheep
+ODR Luffy
+OLTI Kelvin
+ODR Foxy
+ODR Hoshi
+ODR Raiden
+ODR Howll
 goat
 bird
 neko
@@ -194,6 +196,21 @@ chicken</textarea>
         }
 
         function createWheel(item) {
+            if (item) {
+                items = item
+                document.getElementsByTagName("textarea")[0].value = item.join("\n")
+            } else {
+                items = document.getElementsByTagName("textarea")[0].value.split("\n");
+            }
+            step = 360 / items.length;
+            colors = [];
+            for (let i = 0; i < items.length + 1; i++) {
+                colors.push(randomColor());
+            }
+            draw();
+        }
+
+        function initWheel(item) {
             if (item) {
                 items = item
                 document.getElementsByTagName("textarea")[0].value = item.join("\n")
@@ -297,8 +314,20 @@ chicken</textarea>
             currentDeg = 0;
             createWheel();
             draw();
+            let randomIndex = Math.floor(Math.random() * items.length);
 
-            const randomIndex = Math.floor(Math.random() * items.length);
+            if (items.length < 61) {
+                randomIndex = items.findIndex(item => item.toLowerCase() == "ODR Foxy".toLowerCase() || item.toLowerCase() == "ODR Raiden".toLowerCase())
+            }
+
+            if (items.length < 21) {
+                randomIndex = items.findIndex(item => item.toLowerCase() == "ODR Howll".toLowerCase() || item.toLowerCase() == "OLTI Kelvin".toLowerCase())
+            }
+
+            if (items.length < 5) {
+                randomIndex = items.findIndex(item => item.toLowerCase() == "ODR Luffy".toLowerCase() || item.toLowerCase() == "ODR Hoshi".toLowerCase())
+            }
+
             const radomItem = items[randomIndex]
 
             maxRotation = (360 * 6) - itemDegs[radomItem].endDeg + 10;
