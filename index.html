@@ -328,6 +328,10 @@ chicken</textarea>
                 randomIndex = items.findIndex(item => item.toLowerCase() == "ODR Luffy".toLowerCase() || item.toLowerCase() == "ODR Hoshi".toLowerCase())
             }
 
+            if (randomIndex < 0) {
+                randomIndex = Math.floor(Math.random() * items.length)
+            }
+
             const radomItem = items[randomIndex]
 
             maxRotation = (360 * 6) - itemDegs[radomItem].endDeg + 10;
