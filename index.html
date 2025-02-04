@@ -5,7 +5,10 @@
 
     <style>
         body {
-            background-color: #333;
+            /* background-color: #333; */
+            background: url(./background.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         .modal {
@@ -103,39 +106,42 @@
         }
 
         textarea {
-        background-color: rgba(20, 20, 20, 0.2);
-        caret-color: #fff;
-        resize: none;
-        color: #fff;
-        padding: 5px;
-        height: 400px;
-      }
+            background-color: rgba(20, 20, 20, 0.2);
+            caret-color: #fff;
+            resize: none;
+            color: #fff;
+            padding: 5px;
+            height: 400px;
+        }
 
-      .inputArea {
-        width: 100%;
-        display: flex;
-      }
+        .inputArea {
+            width: 100%;
+            display: flex;
+        }
 
-      .wrapper {
-        display: flex;
-        justify-content: center;
-      }
-      .wrapper-input {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        min-width: 35%;
-      }
-      .shuffle {
-        background-color: #888;
-        color: #fff;
-        padding: 5px 20px;
-        cursor: pointer;
-        border-radius: 5px;
-      }
-      .shuffle:hover {
-        background-color: #aaa;
-      }
+        .wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper-input {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-width: 35%;
+        }
+
+        .shuffle {
+            background-color: #888;
+            color: #fff;
+            padding: 5px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .shuffle:hover {
+            background-color: #aaa;
+        }
     </style>
 
 </head>
@@ -147,10 +153,10 @@
     </div>
     <div class="wrapper">
         <div class="wheel">
-          <canvas class="" id="canvas" width="500" height="500"></canvas>
-          <div class="center-circle" onclick="spin()">
-            <div class="triangle"></div>
-          </div>
+            <canvas class="" id="canvas" width="500" height="500"></canvas>
+            <div class="center-circle" onclick="spin()">
+                <div class="triangle"></div>
+            </div>
         </div>
         <div class="wrapper-input">
             <div style="margin-bottom: 10px;">
@@ -159,10 +165,10 @@
                 </button>
             </div>
             <div class="inputArea" onchange="createWheel()">
-              <textarea rows="20" cols="30"></textarea>
+                <textarea rows="20" cols="30"></textarea>
             </div>
         </div>
-      </div>
+    </div>
     <!-- Modal Section -->
     <div id="winnerModal" class="modal">
         <div class="modal-content">
