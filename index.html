@@ -1,11 +1,15 @@
-<!DOCTYPE html><html><head>
-<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
     <title>Tạo vòng quay may mắn miễn phí</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" href="images/logox.png">
     <link rel="stylesheet" href="https://www.w3.org/1999/xlink">
-    <meta name="description" content="XSPIN cung cấp vòng quay may mắn hoàn toàn miễn phí giúp các bạn có thể lựa chọn ngẫu nhiên các phần quà một cách công bằng">
+    <meta name="description"
+        content="XSPIN cung cấp vòng quay may mắn hoàn toàn miễn phí giúp các bạn có thể lựa chọn ngẫu nhiên các phần quà một cách công bằng">
 
     <meta property="og:image" content="images/Tao-vong-quay-may-man-mien-phi.jpg">
 
@@ -21,7 +25,7 @@
 
 
     <!--<link href="font-awesome.min.css" rel="stylesheet" />-->
-    
+
     <link rel="stylesheet" href="css/flaticon.css">
     <!-- bootstrap css file link -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -42,6 +46,12 @@
     <script src='sweet-alert.min.js'></script>-->
 
     <style>
+        body {
+            background: url(./images/background.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
         .MyButton1 {
             float: left;
             color: #fff;
@@ -66,7 +76,7 @@
         }
 
         .MyButton {
-            background-image: -webkit-linear-gradient( 57deg, #f33737 0%, #ff7878 100%, #1b4e76 100%);
+            background-image: -webkit-linear-gradient(57deg, #f33737 0%, #ff7878 100%, #1b4e76 100%);
             border-style: none;
             border-radius: 3px;
             font-weight: bold;
@@ -77,8 +87,7 @@
             cursor: pointer;
         }
 
-        .vqLeft {
-        }
+        .vqLeft {}
 
         .vRight {
             border: 1px solid #dadada;
@@ -95,12 +104,13 @@
             background-repeat: no-repeat;
             width: 90%;
         }
+
         /*desktop*/
         @media (min-width: 1131px) {
-            .imgContent
-            {
-                width:70%;
+            .imgContent {
+                width: 70%;
             }
+
             .vqLeft {
                 float: left;
                 width: 50%;
@@ -119,18 +129,22 @@
                 width: 250px;
                 display: inline-table;
             }
-            .aTuVan{
-                display:block;
+
+            .aTuVan {
+                display: block;
             }
+
             .aTuVan1 {
                 display: none;
             }
         }
+
         /*ipad pro*/
         @media(max-width: 1130px) and (min-width: 769px) {
             .imgContent {
                 width: 70%;
             }
+
             .vqLeft {
                 float: left;
                 width: 50%;
@@ -144,21 +158,26 @@
             .AnCaiDat {
                 display: none;
             }
+
             .aTuVan {
                 display: none;
             }
+
             .aTuVan1 {
                 display: block;
             }
         }
+
         /*ipad*/
         @media(max-width: 768px) and (min-width: 767px) {
             .imgContent {
                 width: 100%;
             }
+
             .imgContent {
                 width: 80%;
             }
+
             .vqLeft {
                 float: left;
                 width: 100%;
@@ -168,111 +187,138 @@
                 float: left;
                 width: 100%;
             }
+
             .AnCaiDat {
                 display: none;
             }
-            #back-wheel{
+
+            #back-wheel {
                 scale: 1;
                 width: 400px !important;
                 height: 400px !important;
             }
-            #wheelOfFortune{
+
+            #wheelOfFortune {
                 width: 360px !important;
                 height: 360px !important;
             }
-            #spin{
+
+            #spin {
                 font-size: 18px !important;
             }
+
             .aTuVan {
                 display: none;
             }
+
             .aTuVan1 {
                 display: block;
             }
         }
-        @media(max-width: 1050px){
+
+        @media(max-width: 1050px) {
             .imgContent {
                 width: 100%;
             }
-            #back-wheel{
+
+            #back-wheel {
                 scale: 0.9;
             }
         }
-        @media(max-width: 950px){
-            #back-wheel{
+
+        @media(max-width: 950px) {
+            #back-wheel {
                 scale: 1;
                 width: 350px !important;
                 height: 350px !important;
             }
-            #wheelOfFortune{
+
+            #wheelOfFortune {
                 width: 339px !important;
                 height: 339px !important;
             }
-            #spin{
+
+            #spin {
                 font-size: 15px !important;
             }
         }
-        @media(max-width: 479px){
+
+        @media(max-width: 479px) {
             .imgContent {
                 width: 100%;
             }
+
             .AnCaiDat {
                 display: none;
             }
-            #back-wheel{
+
+            #back-wheel {
                 scale: 1;
                 width: 330px !important;
                 height: 330px !important;
             }
-            #wheelOfFortune{
+
+            #wheelOfFortune {
                 width: 320px !important;
                 height: 320px !important;
             }
-            #spin{
+
+            #spin {
                 font-size: 15px !important;
             }
+
             .aTuVan {
                 display: none;
             }
+
             .aTuVan1 {
                 display: block;
             }
         }
+
         /*phone*/
         @media(max-width: 766px) and (min-width: 480px) {
             .imgContent {
                 width: 100%;
             }
+
             .vqLeft {
                 float: left;
                 width: 100%;
             }
+
             .vRight {
                 float: left;
                 width: 94%;
             }
+
             .AnCaiDat {
                 display: none;
             }
-            #back-wheel{
+
+            #back-wheel {
                 scale: 1;
                 width: 400px !important;
                 height: 400px !important;
             }
-            #wheelOfFortune{
+
+            #wheelOfFortune {
                 width: 382px !important;
                 height: 382px !important;
             }
-            #spin{
+
+            #spin {
                 font-size: 18px !important;
             }
+
             .aTuVan {
                 display: none;
             }
+
             .aTuVan1 {
                 display: block;
             }
-        } 
+        }
     </style>
     <style>
         @-webkit-keyframes my {
@@ -348,17 +394,15 @@
             //alert('2342');
             $("#dvCongCuHayKhac").load("CongCuHayKhac.html");
 
-            var ccPhanQuay=getCookie("PhanQuay");
+            var ccPhanQuay = getCookie("PhanQuay");
             //alert(ccPhanQuay);
-            if(ccPhanQuay != "" && ccPhanQuay != null)
-            {
-                $('#txtPhanQuay').val(ccPhanQuay.replaceAll("~","\n"));
-                var sTieuDe = "TẠO VÒNG QUAY MAY MẮN MIỄN PHÍ";
+            if (ccPhanQuay != "" && ccPhanQuay != null) {
+                $('#txtPhanQuay').val(ccPhanQuay.replaceAll("~", "\n"));
+                var sTieuDe = "VÒNG QUAY MAY MẮN";
                 $('#txtTieuDe').val(sTieuDe);
                 LoadVongQuay();
             }
-            else
-            {
+            else {
                 ThietLapVongQuay();
             }
 
@@ -379,7 +423,7 @@
         //    return "";
         //}
         function getCookie(cookie_name) {
-            var results = document.cookie.match ('(^|;) ?' + cookie_name + '=([^;]*)(;|$)');
+            var results = document.cookie.match('(^|;) ?' + cookie_name + '=([^;]*)(;|$)');
             return results ? decodeURIComponent(results[2]) : null;
         }
         function setCookie(cname, cvalue, exdays) {
@@ -447,7 +491,7 @@
             sPhanQuay += "Thùy Linh\n";
             //sPhanQuay += "Diễm My\n";
             //sPhanQuay += "Thu Thủy\n";
-            sTieuDe = "TẠO VÒNG QUAY MAY MẮN MIỄN PHÍ";
+            sTieuDe = "VÒNG QUAY MAY MẮN";
 
             $('#txtPhanQuay').val(sPhanQuay);
 
@@ -641,8 +685,7 @@
             $('.vRight').css("display", "block");
         }
 
-        function DatLai()
-        {
+        function DatLai() {
             $("#txtPhanQuay").val("");
         }
     </script>
@@ -663,12 +706,10 @@
             width: 100px;
         }
     </style>-->
-    </head><body style="background-color: #F4F4FC"><a href="tel:0915660068" target="_blank" rel="nofollow" style="position: fixed;bottom: 5px;left: 20px;z-index:9999"><img src="images/phone-icon.gif" style="width: 80px; "></a>
+</head>
+
+<body style="background-color: #F4F4FC">
     <!--<a href="https://zalo.me/1507314870916914776" target="_blank" rel="nofollow" style="position: fixed;bottom: 5px;right: 20px;z-index:9999"><img src="img/Zalo.gif" style="width: 80px; " /></a>-->
-    <a href="https://zalo.me/1507314870916914776" target="_blank" rel="nofollow" style="position: fixed;bottom: 5px;right: 20px;z-index:9999"><img src="images/Zalo.gif" style="width: 80px; "></a>
-
-
-
     <!--<div id="dvCongrats" class="congrats">
         <h1>Congratulations!</h1>
     </div>-->
@@ -676,25 +717,12 @@
         <div class=" header-bottom">
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="site-logo site-title" href="/"><img style="width: 150px;" src="images/logo.png" alt="site-logo"></a>
-                    <button onclick="DoiDiv();" class="navbar-toggler" style="z-index: 9999;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button onclick="DoiDiv();" class="navbar-toggler" style="z-index: 9999;" type="button"
+                        data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="menu-toggle"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav main-menu ml-auto" style="z-index: 9999;">
-                            <li><a href="index.aspx">Trang chủ</a></li>
-                            <li><a href="vongquay.html">Vòng Quay May Mắn</a></li>
-                            <li><a href="QuaySoNgauNhien.html">Quay Số Ngẫu Nhiên</a></li>
-                            <li><a href="Boc-tham-trung-thuong.html">Bốc thăm trúng thưởng</a></li>
-                            <li><a href="cong-cu-nho.html">Công cụ hay</a></li>
-                            <!--<li><a href="ma-giam-gia-all">Mã giảm giá</a></li>-->
-                            <li><a href="xspin.html">XSPIN</a></li>
 
-                            <li><a href="https://xspin.vn/lien-he?utm=qsvn" target="_blank">Liên hệ</a></li>
-
-                        </ul>
-                    </div>
-                </nav>
             </div>
         </div><!-- header-bottom end -->
 
@@ -714,14 +742,16 @@
 
 
 
-                        <div id="txtLoadTieuDe" style="text-align: center; padding: 7px; font-size: 27px; font-weight: bold; color: #000000; margin-bottom: 15px;">TẠO VÒNG QUAY MAY MẮN MIỄN PHÍ</div>
+                        <div id="txtLoadTieuDe"
+                            style="text-align: center; padding: 7px; font-size: 27px; font-weight: bold; color: #000000; margin-bottom: 15px;">
+                            VÒNG QUAY MAY MẮN</div>
                         <div style="overflow:hidden; margin-top:-10px">
                             <div class="vqLeft" style="padding-bottom: 10px;">
                                 <div class="the_wheel" align="center" valign="center">
                                     <div id="back-wheel">
                                         <div id="moc"></div>
                                         <div id="wheelOfFortune">
-                                            <div id="shadow" style="z-index: 1;"></div>                                              
+                                            <div id="shadow" style="z-index: 1;"></div>
                                             <!-- <div id="chop"></div> -->
                                             <div id="spin" style="z-index: 1;">Quay</div>
                                             <canvas id="wheel" width="390" height="390"></canvas>
@@ -734,27 +764,28 @@
 
                                     <div style="margin-top: 10px;">
                                         <table class="AnCaiDat">
-                                            <tbody><tr>
-                                                <td style="width: 19px;">
-                                                    <input onclick="AnCaiDat()" id="rdAnCaiDat" type="radio" name="AnCaiDat" style="width: 17px; height: 17px; display: block; vertical-align: middle;">
-                                                </td>
-                                                <td>
-                                                    Mở rộng
-                                                </td>
-                                                <td style="width: 19px;">
-                                                    <input onclick="HienCaiDat()" id="rdHienCaiDat" type="radio" name="AnCaiDat" style="width: 17px; height: 17px; display: block; vertical-align: middle;" checked="checked">
-                                                </td>
-                                                <td>
-                                                    Thu nhỏ
-                                                </td>
-                                            </tr>
-                                        </tbody></table>
-                                    </div>
-                                    <div>
-                                        <!--<a href="https://xspin.vn/gioi-thieu-phan-mem-vong-quay-may-man?utm=qsvn" style="color:red; text-decoration:underline; font-size:25px" target="_blank">GÓI CHUYÊN NGHIỆP</a>-->
-                                        <a target="_blank" href="https://xspin.vn/gioi-thieu-phan-mem-vong-quay-may-man?utm=qsvn" class="cmn-btn nhapnhay" style="cursor: pointer; width: 310px; border-radius: 50px; color: white; background-image: -webkit-linear-gradient(57deg, #ffeaad 0%, #fff179 100%, rgb(17 164 26) 100%); margin: auto; font-size: 18px; border: 2px solid #f1ff6b; ">
-                                            Sử dụng gói chuyên nghiệp XSPIN
-                                        </a>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width: 19px;">
+                                                        <input onclick="AnCaiDat()" id="rdAnCaiDat" type="radio"
+                                                            name="AnCaiDat"
+                                                            style="width: 17px; height: 17px; display: block; vertical-align: middle;">
+                                                    </td>
+                                                    <td>
+                                                        Mở rộng
+                                                    </td>
+                                                    <td style="width: 19px;">
+                                                        <input onclick="HienCaiDat()" id="rdHienCaiDat" type="radio"
+                                                            name="AnCaiDat"
+                                                            style="width: 17px; height: 17px; display: block; vertical-align: middle;"
+                                                            checked="checked">
+                                                    </td>
+                                                    <td>
+                                                        Thu nhỏ
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                     <!--<div class="aTuVan" style="text-align:center; margin-top:10px">
                                         <a id="aTuVan1" target="_blank" href="https://xspin.vn/dang-ky-tai-khoan-user?utm=qsvn" class="cmn-btn" style="cursor: pointer;
@@ -781,14 +812,20 @@
                             <div class="vRight">
                                 <h3>Cấu hình vòng quay</h3>
                                 <div style="margin-top:5px">
-                                    <input type="text" id="txtTieuDe" style="width: 93%; font-size: 11px; padding: 3px 5px;" placeholder="Nhập tiêu đề">
+                                    <input type="text" id="txtTieuDe"
+                                        style="width: 93%; font-size: 11px; padding: 3px 5px;"
+                                        placeholder="Nhập tiêu đề">
                                 </div>
                                 <div style="margin-top:5px">
                                     <textarea id="txtPhanQuay" class="MyTextarea"></textarea>
                                 </div>
-                                <div style="font-style: italic; color: #007ee2; font-size: 14px; font-weight: bold; margin-top: -5px; margin-bottom: 5px;">Cài đặt sẽ không bị mất đi khi mở lại</div>
+                                <div
+                                    style="font-style: italic; color: #007ee2; font-size: 14px; font-weight: bold; margin-top: -5px; margin-bottom: 5px;">
+                                    Cài đặt sẽ không bị mất đi khi mở lại</div>
                                 <div style="text-align:center">
-                                    <input onclick="CapNhatVongQuay()" type="button" value="Cập nhật vòng quay" class="MyButton" style="background-image: -webkit-linear-gradient(280deg, #428045 0%, #4CAF50 100%, #1b4e76 100%);">
+                                    <input onclick="CapNhatVongQuay()" type="button" value="Cập nhật vòng quay"
+                                        class="MyButton"
+                                        style="background-image: -webkit-linear-gradient(280deg, #428045 0%, #4CAF50 100%, #1b4e76 100%);">
                                     <input onclick="DatLai()" type="button" value="Đặt lại" class="MyButton">
                                     <!--<p style="font-style: italic; font-size: 14px; color: #1f9a24;">(Cài đặt 1 lần sử dụng được cho những lần sau mà không phải cài lại)</p>-->
 
@@ -799,69 +836,40 @@
                                     </div>-->
 
                                     <div style="overflow:hidden; margin:5px 0px">
-                                        <div style="text-align: center; font-size: 18px; font-weight: bold; color: #337e36">Vòng quay vui</div>
+                                        <div
+                                            style="text-align: center; font-size: 18px; font-weight: bold; color: #337e36">
+                                            Vòng quay vui</div>
                                         <div style="text-align:center">
-                                            <div onclick="VongQuayVui('SangNayAnGi')" class="MyButton1">Sáng nay ăn gì?</div>
-                                            <div onclick="VongQuayVui('ChonMauAo')" class="MyButton1" style="background: #d08f2dc2;">Chọn màu áo</div>
-                                            <div onclick="VongQuayVui('DatTenConTrai')" class="MyButton1" style="background: #116db6b3;">Đặt tên con trai</div>
-                                            <div onclick="VongQuayVui('DatTenConGai')" class="MyButton1" style="background: #df3b72bd;">Đặt tên con gái</div>
-                                            <div onclick="VongQuayVui('LixiNamMoi')" class="MyButton1" style="background: #fa4040bd;">Lì xì năm mới</div>
-                                            <div onclick="VongQuayVui('TangVoucher')" class="MyButton1" style="background: #33b840c7; ">Tặng voucher</div>
-                                            <div onclick="VongQuayVui('TangQuaGiChoBanGai')" class="MyButton1" style="background: #673ab7c2; ">Tặng quà gì cho bạn gái?</div>
+                                            <div onclick="VongQuayVui('SangNayAnGi')" class="MyButton1">Sáng nay ăn gì?
+                                            </div>
+                                            <div onclick="VongQuayVui('ChonMauAo')" class="MyButton1"
+                                                style="background: #d08f2dc2;">Chọn màu áo</div>
+                                            <div onclick="VongQuayVui('DatTenConTrai')" class="MyButton1"
+                                                style="background: #116db6b3;">Đặt tên con trai</div>
+                                            <div onclick="VongQuayVui('DatTenConGai')" class="MyButton1"
+                                                style="background: #df3b72bd;">Đặt tên con gái</div>
+                                            <div onclick="VongQuayVui('LixiNamMoi')" class="MyButton1"
+                                                style="background: #fa4040bd;">Lì xì năm mới</div>
+                                            <div onclick="VongQuayVui('TangVoucher')" class="MyButton1"
+                                                style="background: #33b840c7; ">Tặng voucher</div>
+                                            <div onclick="VongQuayVui('TangQuaGiChoBanGai')" class="MyButton1"
+                                                style="background: #673ab7c2; ">Tặng quà gì cho bạn gái?</div>
                                         </div>
                                     </div>
 
                                 </div>
-
-                                <div>
-                                    <!--<a href="https://xspin.vn/gioi-thieu-phan-mem-vong-quay-may-man?utm=qsvn" style="color:red; text-decoration:underline; font-size:25px" target="_blank">GÓI CHUYÊN NGHIỆP</a>-->
-                                    <a target="_blank" href="https://xspin.vn/gioi-thieu-phan-mem-vong-quay-may-man?utm=qsvn">
-                                        <img style="border-radius: 3px;" title="Vòng quay may mắn chuyên nghiệp XSPIN" src="images/gioi-thieu-vong-quay-xspin.jpg">
-                                    </a>
-                                </div>
-
                             </div>
 
                         </div>
 
                         <div style="padding: 10px 5%">
                             <div style="text-align:center">
-                                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1206708643224072" data-ad-slot="3343717865" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                                <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1206708643224072"
+                                    data-ad-slot="3343717865" data-ad-format="auto"
+                                    data-full-width-responsive="true"></ins>
                             </div>
                         </div>
-
-                        <div style="text-align: left; padding: 10px 5%">
-                            <div style="margin-top:5px;">
-                                Đây là vòng quay may mắn được XSPIN thiết kế và cho phép người dùng sử dụng miễn phí, dựa trên nhu cầu thực tiễn nhiều người muốn sử dụng vòng quay để tổ chức các trò chơi nho nhỏ nhằm tăng tính thú vị cho các cuộc hội thảo, bán hàng,…
-                            </div>
-                            <div style="margin-top: 5px;">
-                                Vòng quay được thiết kế với giao diện đẹp, hiện đại và trực quan, khi hoạt động sẽ được xử lý qua code random để chọn ra ngẫu nhiên một phần trúng… bất kỳ ai cũng có thể dễ dàng sử dụng để để tổ chức mini game hỗ trợ công việc và giải trí.
-                            </div>
-                            <div style="margin-top: 5px;">
-                                Tình huống sử dụng phổ biến và quan trọng nhất là khi các nhà bán hàng đang live stream có thể thể sử dụng vòng quay để tặng voucher hoặc hiện vật cho những người đã mua hàng, tình huống này cũng có thể áp dụng trực tiếp tại các cửa hàng nhằm tri ân khách vừa mua.
-                            </div>
-                            <p style="text-align:center"><img src="images/Vong-quay-may-man.jpg" alt="Vòng quay may mắn" class="imgContent"></p>
-                        </div>
-                        
-                        <div style="text-align:left; padding:10px 5%">
-                            <p style="padding: 5px 0px;"></p><h5>HƯỚNG DẪN SỬ DỤNG</h5><p></p>
-                            <div>
-                                <p><b>Bước 1:</b> Bạn vào mục "Cấu hình vòng quay" nhấn nút "Đặt lại" để xóa nội dung cũ và nhập đủ các mảnh ghép cần thiết cho vòng quay, mỗi mảnh ghép là một dòng, sau đó nhấn vào nút "Cập Nhật Vòng Quay" để hoàn tất việc cài đặt.</p>
-                                <p>Dữ liệu cài đặt sẽ không bị mất đi dù bạn lỡ tay tắt web hoặc 1 sự cố nào khác, nó chỉ mất khi bạn dùng chế độ ẩn danh hoặc có sự tác động cài đặt trong trình duyệt.</p>
-                                <p style="text-align:center"><img src="images/Huong-dan-cau-hinh-vong-quay.jpg" alt="Hướng dẫn cấu hình vòng quay may mắn"></p>
-                                <p><b>Bước 2:</b> Sau khi hoàn tất việc cài đặt, vòng quay được tạo ra hoàn chỉnh, bạn chỉ cần nhấn nút "Quay" ở giữa và chờ đợi kết quả hiển thị trên popup khi vòng quay kết thúc.</p>
-                            </div>
-
-                            <!--<p style="color: #980000; margin-top:10px">
-                                Bạn có thể dùng bản chuyên nghiệp dành cho các sự kiện tri ân khách hàng tại: <a style="color: red !important;" id="vqcn" href="https://xspin.vn?utm=qsvngioi-thieu-phan-mem-vong-quay-may-man">Vòng quay chuyên nghiệp</a>
-                            </p>-->
-                            <p style="color: #980000; margin-top:10px">
-                                Bạn có thể dùng bản chuyên nghiệp dành cho các sự kiện tri ân khách hàng tại: <a style="color: red !important;" id="vqcn" href="https://xspin.vn/gioi-thieu-phan-mem-vong-quay-may-man?utm=qsvn">Vòng quay chuyên nghiệp</a>
-                            </p>
-                        </div>
-
-
-                            <!--<div style="text-align:left; padding:10px 5%">
+                        <!--<div style="text-align:left; padding:10px 5%">
                                 <p style="text-align:left">Vòng quay may mắn mang giá trị ứng dụng thực tiễn rất cao trong lĩnh vực marketing và giải trí. Không phải đến khi internet phát triển thì người ta mới ứng dụng, mà trước khi internet chưa phát triển vòng quay may mắn đã được ứng dụng rộng rãi bằng các vòng quay thật từ giấy carton, nhựa hoặc là kim loại. Vòng quay may mắn mang lại sự trực quan, công bằng và cả sự hồi hộp cho người tham dự, nó như một liều thuốc kích thích để giữ chân khách hàng thân thiết.</p>
                                 <div id="dvCongCuHayKhac"></div>
                                 <p style="margin-top: 10px; color: #2196f3; font-size: 20px; "><b>Một số ví dụ ứng dụng trong trong kinh doanh:</b></p>
@@ -888,238 +896,196 @@
                                 <p>Giả sử trong một buổi tiệc họp mặt bạn bè bạn có tổ chức một bữa tiệc nhỏ, để cho không khí vui vẻ hơn bạn có thể sử dụng vòng quay để chỉ định ai là người được ăn hoặc phải uống ly bia gì đó.</p>
                                 <p style="font-style:italic">Ngoài ra còn rất nhiều cách ứng dụng khác, tùy vào nhu cầu mà mỗi người sẽ vận dụng vòng quay may mắn theo cách riêng của mình.</p>
                             </div>-->
-                                                <!--<p style="color: #980000; margin-top:10px">
+                        <!--<p style="color: #980000; margin-top:10px">
                                 XSPIN cung cấp phần mềm vòng quay may mắn online hoàn toàn miễn phí giúp các bạn có thể lựa chọn ngẫu nhiên các phần quà một cách công bằng.
                                 <br />Bạn có thể dùng bản chuyên nghiệp dành cho các sự kiện tri ân khách hàng tại: <a style="color: red !important;" id="vqcn" href="https://xspin.vn?utm=qsvngioi-thieu-phan-mem-vong-quay-may-man">Vòng quay chuyên nghiệp</a>
                             </p>-->
 
 
-                            <div style="text-align:left; padding:10px 5%">
-                                <div id="dvCongCuHayKhac"></div>
-                            </div>
+                        <div style="text-align:left; padding:10px 5%">
+                            <div id="dvCongCuHayKhac"></div>
+                        </div>
 
-                            <div class="form-popup" id="dvTrungThuong">
-                                <!--<div class="form-container" style="padding: 0px; padding-bottom: 20px; background-image: url(img/winner.jpg); background-size: cover;">-->
-                                <div class="form-container" style="padding: 0px; padding-bottom: 20px; background: #fdfce9;">
-                                    <div class="form-container-close" style="margin-right: 0px;">
-                                        <input class="form-close" value="X" type="button" onclick="closeTrungThuong()">
-                                    </div>
+                        <div class="form-popup" id="dvTrungThuong">
+                            <!--<div class="form-container" style="padding: 0px; padding-bottom: 20px; background-image: url(img/winner.jpg); background-size: cover;">-->
+                            <div class="form-container"
+                                style="padding: 0px; padding-bottom: 20px; background: #fdfce9;">
+                                <div class="form-container-close" style="margin-right: 0px;">
+                                    <input class="form-close" value="X" type="button" onclick="closeTrungThuong()">
+                                </div>
 
-                                    <div id="dvKetQuaQuay" style="margin-top: 40px; font-weight: bold; font-size: 30px; color: #117411;">
-                                        <!--Trúng thưởng-->
-                                    </div>
-                                    <div id="dvCongrats" class="congrats">
-                                        <!--<h1>Congratulations!</h1>-->
-                                    </div>
+                                <div id="dvKetQuaQuay"
+                                    style="margin-top: 40px; font-weight: bold; font-size: 30px; color: #117411;">
+                                    <!--Trúng thưởng-->
+                                </div>
+                                <div id="dvCongrats" class="congrats">
+                                    <!--<h1>Congratulations!</h1>-->
                                 </div>
                             </div>
+                        </div>
 
-                            <script>
-                                // Create new wheel object specifying the parameters at creation time.
-
-
-                                function CapNhatVongQuay() {
-
-                                    var clButton = document.getElementById("cl");
-
-                                    // Gọi sự kiện click của nút "cl"
-                                    clButton.click();
-                                    LoadVongQuay();
-                                    setCookie("PhanQuay", $('#txtPhanQuay').val().replaceAll("\n","~"), 30);
-                                    //alert($('#txtPhanQuay').val().replaceAll("\n","~"));
-
-                                    //var sPhanQuay = $('#txtPhanQuay').val().replace("\N", "\n");
-                                    //var arrPhanQuay = sPhanQuay.split('\n');
-                                    //var sPhanQuay1 = "";
-                                    //for (var i = 0; i < arrPhanQuay.length; i++) {
-                                    //    //alert(arrPhanQuay[i].trim());
-                                    //    if (arrPhanQuay[i].trim() != "") {
-                                    //        sPhanQuay1 += arrPhanQuay[i].trim() + "~~~~~-----";
-                                    //    }
-                                    //}
-                                    //sPhanQuay1 += "END";
-                                    //alert($('#txtPhanQuay').val().replaceAll("\n", "-"));
-                                    //setCookie("vqmmfree2", $('#txtPhanQuay').val().replaceAll("\n", "~~~~~-----"), 30);
-
-                                }
+                        <script>
+                            // Create new wheel object specifying the parameters at creation time.
 
 
-                                let audio = new Audio('/Plugins/VQMM_V1/QuaySo1.m4a')
-                                function soundOn(){
-                                    setTimeout(() => {
-                                        audio.play();
+                            function CapNhatVongQuay() {
+
+                                var clButton = document.getElementById("cl");
+
+                                // Gọi sự kiện click của nút "cl"
+                                clButton.click();
+                                LoadVongQuay();
+                                setCookie("PhanQuay", $('#txtPhanQuay').val().replaceAll("\n", "~"), 30);
+                                //alert($('#txtPhanQuay').val().replaceAll("\n","~"));
+
+                                //var sPhanQuay = $('#txtPhanQuay').val().replace("\N", "\n");
+                                //var arrPhanQuay = sPhanQuay.split('\n');
+                                //var sPhanQuay1 = "";
+                                //for (var i = 0; i < arrPhanQuay.length; i++) {
+                                //    //alert(arrPhanQuay[i].trim());
+                                //    if (arrPhanQuay[i].trim() != "") {
+                                //        sPhanQuay1 += arrPhanQuay[i].trim() + "~~~~~-----";
+                                //    }
+                                //}
+                                //sPhanQuay1 += "END";
+                                //alert($('#txtPhanQuay').val().replaceAll("\n", "-"));
+                                //setCookie("vqmmfree2", $('#txtPhanQuay').val().replaceAll("\n", "~~~~~-----"), 30);
+
+                            }
+
+
+                            let audio = new Audio('/Plugins/VQMM_V1/QuaySo1.m4a')
+                            function soundOn() {
+                                setTimeout(() => {
+                                    audio.play();
                                 }, 0);
-                                }
+                            }
 
-                                function iOS() {
-                                    return [
+                            function iOS() {
+                                return [
                                     'iPad Simulator',
                                     'iPhone Simulator',
                                     'iPod Simulator',
                                     'iPad',
                                     'iPhone',
                                     'iPod'
-                                    ].includes(navigator.platform)
+                                ].includes(navigator.platform)
                                     // iPad on iOS 13 detection
                                     || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
-                                }
+                            }
 
 
-                                document.getElementById('spin').onclick = function(){
-                                    //if (iOS() == true){
-                                    //    soundOn()
+                            document.getElementById('spin').onclick = function () {
+                                //if (iOS() == true){
+                                //    soundOn()
+                                //}
+                                //else{
+                                //    soundOn()
+                                //}
+                                soundOn();
+                            }
+
+                            // Loads the tick audio sound in to an audio object.
+
+                            // -------------------------------------------------------
+                            // Function to handle the onClick on the power buttons.
+                            // -------------------------------------------------------
+                            function powerSelected(powerLevel) {
+                                // Ensure that power can't be changed while wheel is spinning.
+                                if (wheelSpinning == false) {
+                                    // Reset all to grey incase this is not the first time the user has selected the power.
+                                    //document.getElementById('pw1').className = "";
+                                    //document.getElementById('pw2').className = "";
+                                    //document.getElementById('pw3').className = "";
+
+                                    // Now light up all cells below-and-including the one selected by changing the class.
+                                    //if (powerLevel >= 1) {
+                                    //    document.getElementById('pw1').className = "pw1";
                                     //}
-                                    //else{
-                                    //    soundOn()
+
+                                    //if (powerLevel >= 2) {
+                                    //    document.getElementById('pw2').className = "pw2";
                                     //}
-                                    soundOn();
+
+                                    //if (powerLevel >= 3) {
+                                    //    document.getElementById('pw3').className = "pw3";
+                                    //}
+
+                                    // Set wheelPower var used when spin button is clicked.
+                                    wheelPower = powerLevel;
+
+                                    // Light up the spin button by changing it's source image and adding a clickable class to it.
+                                    //document.getElementById('spin_button').src = "spin_on.png";
+                                    //document.getElementById('spin_button').className = "clickable";
                                 }
+                            }
 
-                                // Loads the tick audio sound in to an audio object.
+                            // -------------------------------------------------------
+                            // Click handler for spin button.
+                            // -------------------------------------------------------
+                            function startSpin() {
+                                playSoundClick();
+                                // Ensure that spinning can't be clicked again while already running.
+                                if (wheelSpinning == false) {
 
-                                // -------------------------------------------------------
-                                // Function to handle the onClick on the power buttons.
-                                // -------------------------------------------------------
-                                function powerSelected(powerLevel) {
-                                    // Ensure that power can't be changed while wheel is spinning.
-                                    if (wheelSpinning == false) {
-                                        // Reset all to grey incase this is not the first time the user has selected the power.
-                                        //document.getElementById('pw1').className = "";
-                                        //document.getElementById('pw2').className = "";
-                                        //document.getElementById('pw3').className = "";
+                                    $("#btQuayNgay").css("display", "none");
 
-                                        // Now light up all cells below-and-including the one selected by changing the class.
-                                        //if (powerLevel >= 1) {
-                                        //    document.getElementById('pw1').className = "pw1";
-                                        //}
+                                    // Based on the power level selected adjust the number of spins for the wheel, the more times is has
+                                    // to rotate with the duration of the animation the quicker the wheel spins.
 
-                                        //if (powerLevel >= 2) {
-                                        //    document.getElementById('pw2').className = "pw2";
-                                        //}
+                                    /*if (wheelPower == 1) {
+                                        theWheel.animation.spins = 3;
+                                    } else if (wheelPower == 2) {
+                                        theWheel.animation.spins = 6;
+                                    } else if (wheelPower == 3) {
+                                        theWheel.animation.spins = 10;
+                                    }*/
+                                    //theWheel.animation.spins = 50;
 
-                                        //if (powerLevel >= 3) {
-                                        //    document.getElementById('pw3').className = "pw3";
-                                        //}
+                                    // Disable the spin button so can't click again while wheel is spinning.
+                                    //document.getElementById('spin_button').src = "spin_off.png";
+                                    //document.getElementById('spin_button').className = "";
 
-                                        // Set wheelPower var used when spin button is clicked.
-                                        wheelPower = powerLevel;
+                                    // Begin the spin animation by calling startAnimation on the wheel object.
+                                    theWheel.startAnimation();
 
-                                        // Light up the spin button by changing it's source image and adding a clickable class to it.
-                                        //document.getElementById('spin_button').src = "spin_on.png";
-                                        //document.getElementById('spin_button').className = "clickable";
-                                    }
+                                    // Set to true so that power can't be changed and spin button re-enabled during
+                                    // the current animation. The user will have to reset before spinning again.
+                                    wheelSpinning = true;
                                 }
+                            }
 
-                                // -------------------------------------------------------
-                                // Click handler for spin button.
-                                // -------------------------------------------------------
-                                function startSpin() {
-                                    playSoundClick();
-                                    // Ensure that spinning can't be clicked again while already running.
-                                    if (wheelSpinning == false) {
-
-                                        $("#btQuayNgay").css("display", "none");
-
-                                        // Based on the power level selected adjust the number of spins for the wheel, the more times is has
-                                        // to rotate with the duration of the animation the quicker the wheel spins.
-
-                                        /*if (wheelPower == 1) {
-                                            theWheel.animation.spins = 3;
-                                        } else if (wheelPower == 2) {
-                                            theWheel.animation.spins = 6;
-                                        } else if (wheelPower == 3) {
-                                            theWheel.animation.spins = 10;
-                                        }*/
-                                        //theWheel.animation.spins = 50;
-
-                                        // Disable the spin button so can't click again while wheel is spinning.
-                                        //document.getElementById('spin_button').src = "spin_off.png";
-                                        //document.getElementById('spin_button').className = "";
-
-                                        // Begin the spin animation by calling startAnimation on the wheel object.
-                                        theWheel.startAnimation();
-
-                                        // Set to true so that power can't be changed and spin button re-enabled during
-                                        // the current animation. The user will have to reset before spinning again.
-                                        wheelSpinning = true;
-                                    }
-                                }
-
-                                // -------------------------------------------------------
-                                // Function for reset button.
-                                // -------------------------------------------------------
-                                function resetWheel() {
-                                    theWheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
-                                    theWheel.rotationAngle = 0;     // Re-set the wheel angle to 0 degrees.
-                                    theWheel.draw();                // Call draw to render changes to the wheel.
+                            // -------------------------------------------------------
+                            // Function for reset button.
+                            // -------------------------------------------------------
+                            function resetWheel() {
+                                theWheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
+                                theWheel.rotationAngle = 0;     // Re-set the wheel angle to 0 degrees.
+                                theWheel.draw();                // Call draw to render changes to the wheel.
 
 
-                                    wheelSpinning = false;          // Reset to false to power buttons and spin can be clicked again.
-                                }
+                                wheelSpinning = false;          // Reset to false to power buttons and spin can be clicked again.
+                            }
 
-                                // -------------------------------------------------------
-                                // Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters.
-                                // -------------------------------------------------------
-                                function alertPrize(indicatedSegment) {
-                                    $("#btQuayNgay").css("display", "block");
-                                    // Just alert to the user what happened.
-                                    // In a real project probably want to do something more interesting than this with the result.
-                                    //alert("Bạn đã quay trúng ô \"" + indicatedSegment.text + "\"");
-                                    openTrungThuong(indicatedSegment.text);
-                                    //resetWheel();
-                                }
-                            </script>
+                            // -------------------------------------------------------
+                            // Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters.
+                            // -------------------------------------------------------
+                            function alertPrize(indicatedSegment) {
+                                $("#btQuayNgay").css("display", "block");
+                                // Just alert to the user what happened.
+                                // In a real project probably want to do something more interesting than this with the result.
+                                //alert("Bạn đã quay trúng ô \"" + indicatedSegment.text + "\"");
+                                openTrungThuong(indicatedSegment.text);
+                                //resetWheel();
+                            }
+                        </script>
 
-                        </div>
+                    </div>
                 </div>
             </section><!-- End Services Section -->
 
         </main>
     </div>
-    <footer class="footer-section">
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-
-                        <div class="row">
-                            <div class="col-lg-6" style="color:white; text-align:left">
-                                <div style="padding: 0px 15px;">
-                                    <p style="text-transform:uppercase">Công ty TNHH phần mềm XEP</p>
-                                    <p>Mã số thuế: 0313787000</p>
-
-                                    <p>Được cấp bởi Phòng đăng ký kinh doanh - Sở kế hoạch và đầu tư TP.HCM ngày 5 tháng 5 năm 2016</p>
-
-                                    <p>Email: hotro@xspin.vn</p>
-
-                                    <p>Duns Number: 556872988</p>
-
-                                    <p>Hotline-Zalo: 0915.660068</p>
-
-                                    <p>Phone: (028) 777 03 999 - (028) 66 797 666</p>
-
-                                    <p>Địa chỉ: Tòa nhà An Phú Plaza, 117 - 119 Lý Chính Thắng, Phường Võ Thị Sáu, Quận 3, Hồ Chí Minh</p>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-6">
-                                <div>
-                                    <a rel="nofollow" target="_blank" href="http://online.gov.vn/Home/WebDetails/58158?AspxAutoDetectCookieSupport=1">
-                                        <img width="200" src="images/QSGOV.png">
-                                    </a>
-
-                                      <a rel="nofollow" target="_blank" href="https://profiles.dunsregistered.com/DunsRegisteredProfileAnywhere.aspx?key1=3153282&PaArea=Email">
-                                        <img width="100" src="images/DunsXep.png">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <p>© 2020 Thiết kế bởi <a href="https://xep.vn">Công ty phần mềm XEP</a>.</p>
-            </div>
-        </div>
-    </footer>
     <!--<script src="assets/js/bootstrap.min.js"></script>-->
     <script src="js/jquery.min.js"></script>
     <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>-->
@@ -1128,4 +1094,6 @@
     <script src="js/script.js"></script>
 
 
-</body></html>
+</body>
+
+</html>
